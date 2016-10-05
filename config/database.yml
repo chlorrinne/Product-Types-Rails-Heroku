@@ -11,9 +11,9 @@ default: &default
 
 development:
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
+  host: ec2-50-17-255-136.compute-1.amazonaws.com
+  username: ouaqwaeznnbzgy
+  database: d9v2lt4rd09273
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
