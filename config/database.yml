@@ -11,9 +11,11 @@ default: &default
 
 development:
   adapter: postgresql
-  host: ec2-50-17-255-136.compute-1.amazonaws.com
-  username: ouaqwaeznnbzgy
-  database: d9v2lt4rd09273
+  host: localhost
+  username: user
+  database: app-dev
+
+  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,5 +25,7 @@ test:
   database: my_database_test
 
 production:
-  <<: *default
-  database: my_database_production
+  adapter: postgresql
+  host: ec2-50-17-255-136.compute-1.amazonaws.com
+  username: ouaqwaeznnbzgy
+  database: d9v2lt4rd09273
